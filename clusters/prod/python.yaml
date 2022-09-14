@@ -34,8 +34,6 @@ spec:
           value: "3000"
         - name: REGION
           value: us-east-1
-        - name: FOO
-          value: bar
 ---
 apiVersion: v1
 kind: Service
