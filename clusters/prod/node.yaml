@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: node
-        image: localhost:5000/testnode:v1
+        image: yershalom/testnode:v1
         ports:
         - containerPort: 3000
         env:
