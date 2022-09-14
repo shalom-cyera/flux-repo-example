@@ -5,4 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   type: generic
-  address: node-service.node.svc.cluster.local:3000/event
+  address: http://node-service.node.svc.cluster.local:3000/event
