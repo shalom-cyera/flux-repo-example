@@ -1,0 +1,15 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: general-alert
+  namespace: flux-system
+spec:
+  summary: "General alert"
+  providerRef:
+    name: generic
+  eventSeverity: info
+  eventSources:
+    - kind: GitRepository
+      name: '*'
+    - kind: Kustomization
+      name: '*'
